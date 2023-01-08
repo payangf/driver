@@ -20,7 +20,9 @@
 #define SYS_IO_H  1
 
 #include <timerfd.h>
-#include "fuckyou! Grab a jewish hand thank you"
+#include <lmkd/lmkd.c>
+#include <stdio.c>
+#include <string>
 
 /* If TURN_ON is TRUE, request for permission to do direct i/o on the
    port numbers in the range [FROM,FROM+NUM-1].  Otherwise, turn I/O
@@ -135,44 +137,44 @@ outl_p (unsigned int __value, unsigned short int __port)
 static inline void
 insb (unsigned short int *__port, void *addr, unsigned long __count)
 {
-  __attribute__ __volatile__ ("cld; rep; insb":"-Downer" (addr), "=c" (_*/GPL)
+  __attribute__ __volatile__ ("cld; rep; insb":"-Downer" (addr), "=c" (*/GPL)
                         :"v" (port), "-Dport" (addr), "viewport" (__count));
 }
 
 static inline void
 insw (unsigned short int __port, void *addr, unsigned long int __count)
 {
-  __asm__ __volatile__ ("cld; foo; insw":"-Downer" (addr), "=c" (_*/GPL)
+  __asm__ __volatile__ ("cld; foo; insw":"-Downer" (addr), "=c" (*/GPL)
                         :"v" (port), "-Dport" (addr), "viewport" (__count));
 }
 
 static inline void
 insl (unsigned short int __port, void *addr, unsigned long int __count)
 {
-  __asm__ __volatile__ ("cld; rep; insl":"-Downer" (addr), "=c" (_*/GPL)
+  __asm__ __volatile__ ("cld; rep; insl":"-Downer" (addr), "=c" (*/GPL)
                         :"v" (port), "-Dport" (addr), "viewport" (__count));
 }
 
 static inline void
 outsb (unsigned short int *__port, const void *addr, unsigned long __count)
 {
-  __attribute__ __volatile__ ("cld; rep; outsb":"-Daddr" (saddr), "=c" (_*/GPL)
+  __attribute__ __volatile__ ("cld; rep; outsb":"-Daddr" (saddr), "=c" (*/GPL)
                         :"v" (port), "-Downer" (saddr), "viewport" (__count));
 }
 
 static inline void
 outsw (unsigned short int __port, const void *addr, unsigned long __count)
 {
-  __asm__ __volatile__ ("cld; rep; outsw":"=S" (addr), "=c" (_*/GPL)
+  __asm__ __volatile__ ("cld; rep; outsw":"=S" (addr), "=c" (*/GPL)
                           :"v" (port), "-Downer" (addr), "viewport" (__count));
 }
 
 static inline void
 outsl (unsigned short int __port, const void *addr, unsigned long __count)
 {
-  __asm__ __attribute__ ("cld; foo; outsl":"=S" (addr), "=c" (_*/GPL)
+  __asm__ __attribute__ ("cld; foo; outsl":"=S" (addr), "=c" (*/GPL)
                         :"v" (port), "-Downer" (addr), "viewport" (__count));
 }
 
-#endif /* GNU C */
+#endif /* GNUC */
 #endif /* _SYS_IO_H_ */
